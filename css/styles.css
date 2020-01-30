@@ -38,5 +38,45 @@ h1, h2, h3, nav {
 
 .logo {
     padding: 10px;
-    margin: 0 0 0 80px;
+    margin: 0 0 0 40px;
+}
+
+.page {
+    background-color: #EEDD99;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 30px 0;
+}
+
+p {
+    width: 50%;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: #DD9911;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-item {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #BB7711;
+}
+
+.footer-item:link, .footer-item:visited {
+    color: #000000;
+}
+
+.footer-item:hover, .footer-item:visited:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color: #CC8811;
 }
