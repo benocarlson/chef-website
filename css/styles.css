@@ -58,9 +58,37 @@ h4 {
 }
 
 p {
-    width: 50%;
     margin-bottom: 40px;
     margin-left: 20px;
+}
+
+.text {
+    width: 50%;
+}
+
+img {
+    width: 30%;
+    margin: 5%;
+}
+
+.tutorial {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image-box img {
+    width: 40%;
 }
 
 .footer {
