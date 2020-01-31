@@ -52,6 +52,11 @@ h2 {
     margin: 30px 0;
 }
 
+h4 {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 p {
     width: 50%;
     margin-bottom: 40px;
