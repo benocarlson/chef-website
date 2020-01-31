@@ -71,6 +71,18 @@ img {
     margin: 5%;
 }
 
+.recipe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.ingredients-list {
+    margin-left: 40px;
+}
+
 .tutorial {
     width: 100%;
     display: flex;
