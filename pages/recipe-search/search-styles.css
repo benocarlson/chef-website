@@ -1,4 +1,5 @@
 form {
+  margin: 0 auto;
   width: 100%;
   background-color: #EEAA22;
   border-radius: 20px;
@@ -47,4 +48,45 @@ input {
   padding: 0;
   margin: 0;
   text-align: center
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  form {
+    width: 50%;
+  }
+
+  #recipe-search-results {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .search-result {
+    width: 40%;
+    margin: 10px 5%;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+
+  form {
+    width: 33%;
+    margin: 0 33%;
+  }
+
+  #recipe-search-results {
+    width: 20%;
+    padding-right: 2.5%;
+  }
+
+  #searched-recipe {
+    width: 75%;
+    padding-left: 2.5%;
+  }
+
+  .page {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
