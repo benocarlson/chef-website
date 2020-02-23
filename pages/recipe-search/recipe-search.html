@@ -39,14 +39,21 @@
         </nav>
 
         <div class="page">
+            <div class="search-header">
+                <h2>Search Recipes</h2>
+                <p>Powered by TheMealDB</p>
+            </div>
+
             <form id="recipe-search-form">
                 <label>What are you looking for?</label>
                 <input id="recipe-input" type="text"/>
                 <input id="recipe-submit" type="submit" value="Search"/>
             </form>
 
-            <div id="recipe-search-results"></div>
-            <div id="searched-recipe"></div>
+            <div class="result-divs">
+                <div id="recipe-search-results"></div>
+                <div id="searched-recipe"></div>    
+            </div>
         </div>
 
         <div class="footer">
