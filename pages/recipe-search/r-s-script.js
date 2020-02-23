@@ -29,7 +29,28 @@ document.getElementById("recipe-submit").addEventListener("click", function(even
         for (let meal of json.meals) {
           document.getElementById("meal-" + meal.idMeal).addEventListener("click", function(event) {
             event.preventDefault();
-            // TODO build recipe html
+            console.log("clicked on " + meal.strMeal);
+            let recipe = "";
+            recipe += "<div class='recipe'>"
+            recipe += "<div class='text'>"
+            recipe += "<h3>" + meal.strMeal + "</h3>"
+            recipe += "<p>" + meal.strArea + " " + meal.strCategory + "</p>"
+            recipe += "<h4>Ingredients:</h4>"
+            recipe += "<ul class='ingredients-list'>"
+            for (let i = 1; i <= 20; i++) {
+              let ingredient = meal["strIngredient" + i];
+              if (ingredient != null && ingredient !== "") {
+                recipe += "<li>" + meal["strMeasure" + i] + " " + ingredient + "</li>" 
+              }
+            }
+            recipe += "</ul>"
+            recipe += "<h4>Instructions:</h4>"
+            recipe += "<p>" + meal.strInstructions + "</p>"
+            recipe += "</div>"
+            recipe += "<img src='" + meal.strMealThumb + "'/>"
+            recipe += "</div>"
+
+            document.getElementById("searched-recipe").innerHTML = recipe;
           })
         }
       }
