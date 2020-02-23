@@ -50,7 +50,9 @@ document.getElementById("recipe-submit").addEventListener("click", function(even
             recipe += "<img src='" + meal.strMealThumb + "'/>"
             recipe += "</div>"
 
-            document.getElementById("searched-recipe").innerHTML = recipe;
+            let searched = document.getElementById("searched-recipe");
+            searched.innerHTML = recipe;
+            searched.scrollIntoView();
           })
         }
       }
