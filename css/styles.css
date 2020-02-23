@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Raleway', serif;
 }
@@ -44,6 +48,7 @@ h1, h2, h3, nav {
 .page {
     background-color: #EEDD99;
     padding: 5%;
+    min-height: 80%;
 }
 
 

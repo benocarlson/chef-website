@@ -1,0 +1,21 @@
+form {
+  width: 100%;
+  background-color: #EEAA22;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  width: 100%;
+  margin: 5px;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
